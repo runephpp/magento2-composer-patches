@@ -1,0 +1,11 @@
+--- DirectoryResolverOriginal.php	2018-07-26 15:13:50.000000000 +0200
++++ DirectoryResolver.php	2018-07-26 15:08:12.000000000 +0200
+@@ -52,7 +52,7 @@
+     {
+         $directory = $this->filesystem->getDirectoryWrite($directoryConfig);
+         $realPath = $directory->getDriver()->getRealPathSafety($path);
+-        $root = $this->directoryList->getPath($directoryConfig);
++        $root = realpath($this->directoryList->getPath($directoryConfig));
+         
+         return strpos($realPath, $root) === 0;
+     }
