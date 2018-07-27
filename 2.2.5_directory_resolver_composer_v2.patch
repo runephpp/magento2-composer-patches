@@ -1,5 +1,10 @@
---- DirectoryResolverOriginal.php	2018-07-26 15:13:50.000000000 +0200
-+++ DirectoryResolver.php	2018-07-26 15:08:12.000000000 +0200
+Index: a/vendor/magento/framework/App/Filesystem/DirectoryResolver.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- a/vendor/magento/framework/App/Filesystem/DirectoryResolver.php	(date 1521531005000)
++++ b/vendor/magento/framework/App/Filesystem/DirectoryResolver.php	(date 1521561205000)
 @@ -52,7 +52,7 @@
      {
          $directory = $this->filesystem->getDirectoryWrite($directoryConfig);
